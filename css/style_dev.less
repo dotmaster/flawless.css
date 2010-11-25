@@ -38,13 +38,16 @@
  * gaps, spans and so on. Basically this defines the row-height of
  * the grid in pixels and aligns all elements in the flow of the grid. 
  */
-@setup_vertical_rhythm: 20;
+//@setup_vertical_rhythm: 20;
+@setup_vertical_rhythm: 24;
+
 
 /* Here you can control the overall font size. Not that this value 
  * strongly correlates with the vertical rhythm. If you make these
  * two values too different your text flow will look ugly
  */
-@setup_font_size: 13;
+//@setup_font_size: 13;
+@setup_font_size: 16;
 
 /* ================ SPLIT UP YOUR CODE ================
  * It is highly recommended to split up your various parts
@@ -55,3 +58,4 @@
 @import "screen-base.less"; /* the base layout applied to all screen sizes */
 @import "screen-medium.less"; /* the changes applied to medium screen sizes */
 @import "screen-small.less"; /* changes applied to small screen sizes */
+@import "nojavascript.less"; /* display a message when there is no javascript*/

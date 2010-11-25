@@ -13,7 +13,7 @@ function flawless_init() {
 		modules: {
 			less_js: {
 				type: 'js',
-				path: 'less-1.0.36.js' 	
+				path: 'less-1.0.35.js' 	
 			},
 			flawless_less: {
 				type:'js',
@@ -26,11 +26,11 @@ function flawless_init() {
 			},
 			jquery_ui_css: {
 				type: 'css',
-				path: 'jquery-ui-1.8.6/jquery-ui-1.8.6.css'	
+				path: 'jquery-ui-1.8.4/jquery-ui-1.8.4.css'	
 			},
 			jquery_ui: {
 				type: 'js',
-				path: 'jquery-ui-1.8.6/jquery-ui-1.8.6.js',
+				path: 'jquery-ui-1.8.4/jquery-ui-1.8.4.js',
 				requires: ['jquery', 'jquery_ui_css']	
 			},
 			compress: {
@@ -42,7 +42,7 @@ function flawless_init() {
 				type: 'js',
 				path: 'html5-outliner-1.0.js'	
 			},
-			yui_profiling_css: {
+			/*yui_profiling_css: {
 				type: 'css',
 				path: 'profiling/yahoo-profiling.css'	
 			},
@@ -55,11 +55,11 @@ function flawless_init() {
 				type: 'js',
 				path: 'profiling/config.js',
 				requires: ['yui_profiling']	
-			},
+			},*/
 			flawless_ui: {
 				type: 'js',
 				path: 'flawless_ui-1.0.js',
-				requires: ['jquery_ui', 'yui_profiling_config', 'html5outliner', 'compress']	
+				requires: ['jquery_ui'/*, 'yui_profiling_config'*/, 'html5outliner', 'compress']	
 			}
 		}
 	});
